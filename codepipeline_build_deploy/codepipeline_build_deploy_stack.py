@@ -100,15 +100,19 @@ class CodepipelineBuildDeployStack(Stack):
         build_output = codepipeline.Artifact()
         pipeline = codepipeline.Pipeline(self, "EcsArmPipeline", pipeline_name="EcsArmPipeline")
 
+        # Read CodeStar Connection ARN from CDK context if provided, otherwise fallback to known ARN
+        connection_arn = self.node.try_get_context("connectionArn") or \
+            "arn:aws:codestar-connections:us-east-1:595922124144:connection/6ff91833-3f77-4334-8ba2-3573bbd3015d"
+
         pipeline.add_stage(
             stage_name="Source",
             actions=[
                 codepipeline_actions.CodeStarConnectionsSourceAction(
                     action_name="GitHub_Source",
-                    owner="YOUR_GITHUB_USER",
-                    repo="YOUR_REPO_NAME",
+                    owner="codeavatar1",
+                    repo="code-pipeline-manual-arm-cdk",
                     branch="main",
-                    connection_arn="YOUR_CONNECTION_ARN",
+                    connection_arn=connection_arn,
                     output=source_output
                 )
             ]
