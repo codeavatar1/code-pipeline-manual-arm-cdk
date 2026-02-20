@@ -1,0 +1,11 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        # CodePipeline automatically replaces this with the new Task Definition ARN
+        TaskDefinition: <TASK_DEFINITION>
+        LoadBalancerInfo:
+          ContainerName: "web"
+          # Must be an integer for EC2/Bridge deployments
+          ContainerPort: 80

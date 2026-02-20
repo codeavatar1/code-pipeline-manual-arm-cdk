@@ -1,0 +1,583 @@
+{
+  "requesterUsername": "codeavatar1",
+  "requesterAvatarIconUri": {
+    "$mid": 1,
+    "path": "/u/40267149",
+    "scheme": "https",
+    "authority": "avatars.githubusercontent.com",
+    "query": "v=4"
+  },
+  "responderUsername": "GitHub Copilot",
+  "responderAvatarIconUri": {
+    "id": "copilot"
+  },
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_165b664c-8bce-474f-bb53-532b6a8a8c8d",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 6
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 7
+            },
+            "text": "github",
+            "kind": "text"
+          }
+        ],
+        "text": "github"
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "value": "Hi! It seems like you're asking about GitHub. Could you clarify what you'd like to know or do? For example, are you looking for help with GitHub commands, setting up a repository, or integrating GitHub with your project? Let me know!",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Debian"
+          }
+        }
+      ],
+      "responseId": "response_3d9fcebc-e8a0-487d-b639-269a919a3ae2",
+      "result": {
+        "timings": {
+          "firstProgress": 787,
+          "totalElapsed": 1408
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "messages": [
+            {
+              "role": "user",
+              "content": "github"
+            },
+            {
+              "role": "assistant",
+              "content": "Hi! It seems like you're asking about GitHub. Could you clarify what you'd like to know or do? For example, are you looking for help with GitHub commands, setting up a repository, or integrating GitHub with your project? Let me know!"
+            }
+          ],
+          "modelMessageId": "50f4609a-005d-4bc3-9465-9eb2e6176c60",
+          "responseId": "79933ff6-9a93-4289-bdfe-1ead423e6c05",
+          "sessionId": "da8109dc-b183-4f5b-a5ea-1c21ba768512",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.default",
+          "message": "How to create a new repo?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "welcomeMessageContent": {
+            "icon": {
+              "id": "copilot-large"
+            },
+            "title": "Ask Copilot",
+            "message": {
+              "value": "Copilot is powered by AI, so mistakes are possible. Review output carefully before use.",
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {}
+            }
+          },
+          "requester": {
+            "name": "codeavatar1",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/40267149",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [],
+      "codeCitations": [],
+      "timestamp": 1745603611874
+    },
+    {
+      "requestId": "request_8a31c84e-d246-4208-aaf6-086d2b3331b0",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 240
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 241
+            },
+            "text": "no in thsi fiel it doe simport from aws sdk cdk  how to installed teh aws sdk for pythosn ithis is debain in wsl2 shoudl i install  in ~ directlry or in venv whats recommed for pytho developemnt with aws sdk boto i think newbie with python ",
+            "kind": "text"
+          }
+        ],
+        "text": "no in thsi fiel it doe simport from aws sdk cdk  how to installed teh aws sdk for pythosn ithis is debain in wsl2 shoudl i install  in ~ directlry or in venv whats recommed for pytho developemnt with aws sdk boto i think newbie with python "
+      },
+      "variableData": {
+        "variables": [
+          {
+            "id": "vscode.implicit.viewport",
+            "name": "file:codepipeline_build_deploy_stack.py",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "\\mnt\\c\\users\\bvh89\\onedrive\\documents\\workspace-101\\aws-cdk-examples\\python\\codepipeline-build-deploy-github-manual\\codepipeline_build_deploy\\codepipeline_build_deploy_stack.py",
+                "_sep": 1,
+                "external": "vscode-remote://wsl%2Bdebian/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/python/codepipeline-build-deploy-github-manual/codepipeline_build_deploy/codepipeline_build_deploy_stack.py",
+                "path": "/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/python/codepipeline-build-deploy-github-manual/codepipeline_build_deploy/codepipeline_build_deploy_stack.py",
+                "scheme": "vscode-remote",
+                "authority": "wsl+Debian"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 48,
+                "endColumn": 15
+              }
+            },
+            "isFile": true,
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Refining question to improve search accuracy.",
+            "uris": {}
+          }
+        },
+        {
+          "kind": "progressMessage",
+          "content": {
+            "value": "Searching command and setting index....",
+            "uris": {}
+          }
+        },
+        {
+          "value": "\nIt is recommended to use a virtual environment (venv) for Python development to isolate dependencies and avoid conflicts with system-wide packages.\nFollow these steps to install the AWS SDK for Python (Boto3) and AWS CDK in a virtual environment on Debian in WSL2:\n1. Open your terminal in WSL2 and navigate to your project directory or create a new one.\n2. Create a virtual environment using the command: `python3 -m venv .venv`.\n3. Activate the virtual environment using: `source .venv/bin/activate`.\n4. Upgrade pip to the latest version: `pip install --upgrade pip`.\n5. Install the AWS SDK for Python (Boto3) using: `pip install boto3`.\n6. Install the AWS CDK for Python using: `pip install aws-cdk.core`.\n7. Optionally, install other AWS CDK modules you need, such as `aws-cdk.aws-ec2`, `aws-cdk.aws-ecs`, etc., using pip.\n8. Verify the installation by running: `python -c \"import boto3; print(boto3.__version__)\"` and `python -c \"import aws_cdk; print(aws_cdk.__version__)\"`.",
+          "supportThemeIcons": false,
+          "supportHtml": false
+        }
+      ],
+      "responseId": "response_f6f3741e-907e-4319-8044-48148783f69b",
+      "result": {
+        "timings": {
+          "firstProgress": 15881,
+          "totalElapsed": 15887
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "messages": [
+            {
+              "role": "user",
+              "content": "no in thsi fiel it doe simport from aws sdk cdk  how to installed teh aws sdk for pythosn ithis is debain in wsl2 shoudl i install  in ~ directlry or in venv whats recommed for pytho developemnt with aws sdk boto i think newbie with python "
+            },
+            {
+              "role": "assistant",
+              "content": "```json\n[\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"It is recommended to use a virtual environment (venv) for Python development to isolate dependencies and avoid conflicts with system-wide packages.\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"Follow these steps to install the AWS SDK for Python (Boto3) and AWS CDK in a virtual environment on Debian in WSL2:\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"1. Open your terminal in WSL2 and navigate to your project directory or create a new one.\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"2. Create a virtual environment using the command: `python3 -m venv .venv`.\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"3. Activate the virtual environment using: `source .venv/bin/activate`.\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"4. Upgrade pip to the latest version: `pip install --upgrade pip`.\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"5. Install the AWS SDK for Python (Boto3) using: `pip install boto3`.\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"6. Install the AWS CDK for Python using: `pip install aws-cdk.core`.\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"7. Optionally, install other AWS CDK modules you need, such as `aws-cdk.aws-ec2`, `aws-cdk.aws-ecs`, etc., using pip.\"\n\t},\n\t{\n\t\t\"type\": \"other\",\n\t\t\"description\": \"8. Verify the installation by running: `python -c \\\"import boto3; print(boto3.__version__)\\\"` and `python -c \\\"import aws_cdk; print(aws_cdk.__version__)\\\"`.\"\n\t}\n]\n```"
+            }
+          ],
+          "modelMessageId": "7df9e34a-b30a-4c08-b44e-021fecd3184a",
+          "responseId": "f503efbd-a39a-4e43-9495-c4fe17d282f7",
+          "sessionId": "4d1201af-947d-463a-8b0c-78635769d958",
+          "agentId": "github.copilot.vscode"
+        }
+      },
+      "followups": [
+        {
+          "kind": "reply",
+          "agentId": "github.copilot.vscode",
+          "message": "How do I activate the venv?"
+        }
+      ],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.vscode",
+        "description": "Ask questions about VS Code",
+        "metadata": {
+          "sampleRequest": "What is the command to open the integrated terminal?",
+          "icon": {
+            "$mid": 1,
+            "path": "/home/sesh/.vscode-server/extensions/github.copilot-chat-0.26.7/assets/vscode-chat-avatar-stable.svg",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Debian"
+          },
+          "hasFollowups": true,
+          "supportIssueReporting": false
+        },
+        "name": "vscode",
+        "fullName": "VS Code",
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [
+          {
+            "name": "search",
+            "description": "Generate query parameters for workspace search",
+            "sampleRequest": "Search for 'foo' in all files under my 'src' directory"
+          },
+          {
+            "name": "startDebugging",
+            "description": "Generate launch config and start debugging in VS Code (Experimental)",
+            "sampleRequest": "Attach to node app at port 9229",
+            "when": "config.github.copilot.chat.startDebugging.enabled"
+          }
+        ],
+        "disambiguation": [
+          {
+            "category": "vscode_configuration_questions",
+            "description": "The user wants to learn about, use, or configure the Visual Studio Code. Use this category if the users question is specifically about commands, settings, keybindings, extensions and other features available in Visual Studio Code. Do not use this category to answer questions about generating code or creating new projects including Visual Studio Code extensions.",
+            "examples": [
+              "Switch to light mode.",
+              "Keyboard shortcut to toggle terminal visibility.",
+              "Settings to enable minimap.",
+              "Whats new in the latest release?"
+            ]
+          },
+          {
+            "category": "configure_python_environment",
+            "description": "The user wants to set up their Python environment.",
+            "examples": [
+              "Create a virtual environment for my project."
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "external": "vscode-remote://wsl%2Bdebian/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/python/codepipeline-build-deploy-github-manual/codepipeline_build_deploy/codepipeline_build_deploy_stack.py",
+            "path": "/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/python/codepipeline-build-deploy-github-manual/codepipeline_build_deploy/codepipeline_build_deploy_stack.py",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Debian"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1745603717411
+    },
+    {
+      "requestId": "request_37adea9c-15e0-4cba-9de8-7c1577908442",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 66
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 67
+            },
+            "text": "create a untitiel txt with all teh chat output you said righ tnow ",
+            "kind": "text"
+          }
+        ],
+        "text": "create a untitiel txt with all teh chat output you said righ tnow "
+      },
+      "variableData": {
+        "variables": [
+          {
+            "id": "vscode.implicit.viewport",
+            "name": "file:codepipeline_build_deploy_stack.py",
+            "value": {
+              "uri": {
+                "$mid": 1,
+                "fsPath": "\\mnt\\c\\users\\bvh89\\onedrive\\documents\\workspace-101\\aws-cdk-examples\\python\\codepipeline-build-deploy-github-manual\\codepipeline_build_deploy\\codepipeline_build_deploy_stack.py",
+                "_sep": 1,
+                "external": "vscode-remote://wsl%2Bdebian/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/python/codepipeline-build-deploy-github-manual/codepipeline_build_deploy/codepipeline_build_deploy_stack.py",
+                "path": "/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/python/codepipeline-build-deploy-github-manual/codepipeline_build_deploy/codepipeline_build_deploy_stack.py",
+                "scheme": "vscode-remote",
+                "authority": "wsl+Debian"
+              },
+              "range": {
+                "startLineNumber": 1,
+                "startColumn": 1,
+                "endLineNumber": 48,
+                "endColumn": 15
+              }
+            },
+            "isFile": true,
+            "modelDescription": "User's current visible code"
+          }
+        ]
+      },
+      "response": [
+        {
+          "value": "To create a text file with all the chat output so far, you can follow these steps:\n\n1. Open your terminal in WSL2.\n2. Use a text editor like `nano` or `vim` to create a new file. For example:\n   ```bash\n   nano chat_output.txt\n   ```\n3. Copy all the chat output from this conversation and paste it into the editor.\n4. Save the file:\n   - In `nano`, press `Ctrl+O`, then `Enter` to save, and `Ctrl+X` to exit.\n   - In `vim`, press `Esc`, type `:wq`, and press `Enter`.\n\nAlternatively, if you're using Visual Studio Code, you can create a new file (`File > New File`), paste the content, and save it as `chat_output.txt`.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Debian"
+          }
+        }
+      ],
+      "responseId": "response_6f3f00ce-45ae-49c0-8270-3fb682d6d312",
+      "result": {
+        "timings": {
+          "firstProgress": 1134,
+          "totalElapsed": 2890
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "messages": [
+            {
+              "role": "user",
+              "content": "create a untitiel txt with all teh chat output you said righ tnow "
+            },
+            {
+              "role": "assistant",
+              "content": "To create a text file with all the chat output so far, you can follow these steps:\n\n1. Open your terminal in WSL2.\n2. Use a text editor like `nano` or `vim` to create a new file. For example:\n   ```bash\n   nano chat_output.txt\n   ```\n3. Copy all the chat output from this conversation and paste it into the editor.\n4. Save the file:\n   - In `nano`, press `Ctrl+O`, then `Enter` to save, and `Ctrl+X` to exit.\n   - In `vim`, press `Esc`, type `:wq`, and press `Enter`.\n\nAlternatively, if you're using Visual Studio Code, you can create a new file (`File > New File`), paste the content, and save it as `chat_output.txt`."
+            }
+          ],
+          "modelMessageId": "43d83721-6f98-47ac-aa15-6f6f57a9dab5",
+          "responseId": "c2e35343-cc69-4bff-8252-c25743713f89",
+          "sessionId": "da8109dc-b183-4f5b-a5ea-1c21ba768512",
+          "agentId": "github.copilot.default"
+        }
+      },
+      "followups": [],
+      "isCanceled": false,
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot Chat",
+        "id": "github.copilot.default",
+        "description": "Ask Copilot",
+        "metadata": {
+          "themeIcon": {
+            "id": "copilot"
+          },
+          "hasFollowups": true,
+          "helpTextPrefix": "You can ask me general programming questions, or chat with the following participants which have specialized expertise and can perform actions:",
+          "helpTextVariablesPrefix": "You can also help me understand your question by using the following variables to give me extra context:",
+          "helpTextPostfix": {
+            "value": "To have a great conversation, ask me questions as if I was a real programmer:\n\n* **Show me the code** you want to talk about by having the files open and selecting the most important lines.\n* **Make refinements** by asking me follow-up questions, adding clarifications, providing errors, etc.\n* **Review my suggested code** and tell me about issues or improvements, so I can iterate on it.\n\nYou can also ask me questions about your editor selection by [starting an inline chat session](command:inlineChat.start).\n\nLearn more about [GitHub Copilot](https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted) in [Visual Studio Code](https://code.visualstudio.com/docs/copilot/overview). Or explore the [Copilot walkthrough](command:github.copilot.open.walkthrough).",
+            "isTrusted": {
+              "enabledCommands": [
+                "inlineChat.start",
+                "github.copilot.open.walkthrough"
+              ]
+            },
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "uris": {
+              "command:inlineChat.start": {
+                "$mid": 1,
+                "path": "inlineChat.start",
+                "scheme": "command"
+              },
+              "https://docs.github.com/copilot/using-github-copilot/getting-started-with-github-copilot?tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted": {
+                "$mid": 1,
+                "path": "/copilot/using-github-copilot/getting-started-with-github-copilot",
+                "scheme": "https",
+                "authority": "docs.github.com",
+                "query": "tool=vscode&utm_source=editor&utm_medium=chat-panel&utm_campaign=2024q3-em-MSFT-getstarted"
+              },
+              "https://code.visualstudio.com/docs/copilot/overview": {
+                "$mid": 1,
+                "path": "/docs/copilot/overview",
+                "scheme": "https",
+                "authority": "code.visualstudio.com"
+              },
+              "command:github.copilot.open.walkthrough": {
+                "$mid": 1,
+                "path": "github.copilot.open.walkthrough",
+                "scheme": "command"
+              }
+            }
+          },
+          "supportIssueReporting": false,
+          "welcomeMessageContent": {
+            "icon": {
+              "id": "copilot-large"
+            },
+            "title": "Ask Copilot",
+            "message": {
+              "value": "Copilot is powered by AI, so mistakes are possible. Review output carefully before use.",
+              "supportThemeIcons": false,
+              "supportHtml": false,
+              "uris": {}
+            }
+          },
+          "requester": {
+            "name": "codeavatar1",
+            "icon": {
+              "$mid": 1,
+              "path": "/u/40267149",
+              "scheme": "https",
+              "authority": "avatars.githubusercontent.com",
+              "query": "v=4"
+            }
+          }
+        },
+        "name": "GitHubCopilot",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "slashCommands": [],
+        "disambiguation": [
+          {
+            "category": "generate_code_sample",
+            "description": "The user wants to generate code snippets without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Write an example of computing a SHA256 hash."
+            ]
+          },
+          {
+            "category": "add_feature_to_file",
+            "description": "The user wants to change code in a file that is provided in their request, without referencing the contents of the current workspace. This category does not include generating entire projects.",
+            "examples": [
+              "Add a refresh button to the table widget."
+            ]
+          },
+          {
+            "category": "question_about_specific_files",
+            "description": "The user has a question about a specific file or code snippet that they have provided as part of their query, and the question does not require additional workspace context to answer.",
+            "examples": [
+              "What does this file do?"
+            ]
+          }
+        ]
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "external": "vscode-remote://wsl%2Bdebian/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/python/codepipeline-build-deploy-github-manual/codepipeline_build_deploy/codepipeline_build_deploy_stack.py",
+            "path": "/mnt/c/users/bvh89/onedrive/documents/workspace-101/aws-cdk-examples/python/codepipeline-build-deploy-github-manual/codepipeline_build_deploy/codepipeline_build_deploy_stack.py",
+            "scheme": "vscode-remote",
+            "authority": "wsl+Debian"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "timestamp": 1745603869701
+    }
+  ]
+}
