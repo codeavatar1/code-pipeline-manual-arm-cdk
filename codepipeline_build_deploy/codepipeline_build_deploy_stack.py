@@ -82,8 +82,8 @@ class CodepipelineBuildDeployStack(Stack):
             build_spec=codebuild.BuildSpec.from_source_filename("buildspec.yml"),
             environment=codebuild.BuildEnvironment(
                 privileged=True,
-                # UPDATE: Use Amazon Linux 2023 for latest ARM tools
-                build_image=codebuild.LinuxArmBuildImage.AMAZON_LINUX_2023_STANDARD_3_0,
+                # Use a supported Amazon Linux 2 ARM standard image for CodeBuild
+                build_image=codebuild.LinuxArmBuildImage.AMAZON_LINUX_2_STANDARD_3_0,
                 compute_type=codebuild.ComputeType.SMALL
             ),
             environment_variables={
