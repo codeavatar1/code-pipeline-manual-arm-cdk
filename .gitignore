@@ -1,3 +1,26 @@
+.venv/
+env/
+*.pyc
+__pycache__/
+.pytest_cache/
+.env
+venv/
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+dist/
+build/
+*.egg-info/
+# AWS/CDK
+.aws-sam/
+.aws-sso/cache/
+.cdk.staging/
+.cache/
+
+# Docker
+**/Dockerfile
+*.tar
 *.swp
 package-lock.json
 __pycache__

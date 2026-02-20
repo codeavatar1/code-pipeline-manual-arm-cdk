@@ -1,3 +1,56 @@
+CodePipeline Build & Deploy (ARM, EC2 Capacity Provider)
+
+This repository contains an AWS CDK (Python) project that provisions an ARM-based ECS EC2 service, an Application Load Balancer, and a CodePipeline that builds an ARM container image and performs blue/green deployments via CodeDeploy.
+
+Quick summary
+- Source: GitHub via CodeStar Connections
+- Build: CodeBuild (ARM build image)
+- Deploy: ECS (EC2 capacity provider) with CodeDeploy blue/green
+
+Prerequisites
+- AWS CLI configured with credentials for the target account/region
+- AWS CDK v2 installed (npm install -g aws-cdk)
+- Python 3.9+ and virtual environment
+- A CodeStar Connections entry for your GitHub account (see below)
+
+Setup (local)
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Create a CodeStar Connections link (Console)
+- In the AWS Console choose the target Region.
+- Go to Developer Tools → CodeStar Connections → Create connection → GitHub.
+- Authorize access to the repository (or select repos).
+- After creation copy the Connection ARN (format: arn:aws:codestar-connections:<region>:<account>:connection/<uuid>).
+
+Deploying the CDK stack
+1. Bootstrap (first time for this account/region):
+```bash
+cdk bootstrap
+```
+2. Deploy and provide the CodeStar Connection ARN via CDK context:
+```bash
+cdk deploy -c connectionArn=arn:aws:codestar-connections:us-east-1:595922124144:connection/6ff91833-3f77-4334-8ba2-3573bbd3015d
+```
+
+Notes
+- The stack file `codepipeline_build_deploy/codepipeline_build_deploy_stack.py` reads `connectionArn` from CDK context and falls back to the ARN above.
+- The `owner` and `repo` fields are set to `codeavatar1` / `code-pipeline-manual-arm-cdk` by default; change them in the stack if needed.
+- After deployment, view stack outputs for the ALB DNS name.
+
+Helpful commands
+```bash
+# List pipelines
+aws codepipeline list-pipelines
+
+# View pipeline details
+aws codepipeline get-pipeline --name EcsArmPipeline
+```
+
+If you'd like, I can also add an MIT LICENSE and tweak the README with more deployment examples.
 # Building and Deploying a Docker Image With AWS CodePipeline
 
 ## <!--BEGIN STABILITY BANNER-->
