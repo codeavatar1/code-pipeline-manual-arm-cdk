@@ -77,9 +77,58 @@ class CodepipelineBuildDeployStack(Stack):
         )
 
         # 6. Build Project (ARM Optimized)
+        # Inline BuildSpec so CodeBuild does not require a buildspec.yml in the source artifact
+        inline_buildspec = codebuild.BuildSpec.from_object({
+            "version": "0.2",
+            "env": {
+                "variables": {
+                    "IMAGE_TAG": "${CODEBUILD_RESOLVED_SOURCE_VERSION:-latest}"
+                }
+            },
+            "phases": {
+                "pre_build": {
+                    "commands": [
+                        "echo Logging in to Amazon ECR...",
+                        "aws --version || true",
+                        "aws ecr get-login-password --region ${AWS_REGION:-us-east-1} | docker login --username AWS --password-stdin $REPOSITORY_URI",
+                        "echo Using image tag: $IMAGE_TAG"
+                    ]
+                },
+                "build": {
+                    "commands": [
+                        "echo Build started on `date`",
+                        "echo Building the Docker image...",
+                        "docker build -t $REPOSITORY_URI:$IMAGE_TAG ."
+                    ]
+                },
+                "post_build": {
+                    "commands": [
+                        "echo Build completed on `date`",
+                        "echo Pushing the Docker image...",
+                        "docker push $REPOSITORY_URI:$IMAGE_TAG",
+                        "echo Writing imagedefinitions.json for CodeDeploy/CodePipeline",
+                        "printf '[{"name":"web","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json",
+                        "mkdir -p output",
+                        "cp app/taskdef.json output/taskdef.json || true",
+                        "cp app/appspec.yaml output/appspec.yaml || true",
+                        "echo Replacing role placeholders in task definition",
+                        "sed -i \"s|TASK_ROLE_ARN|$TASK_ROLE_ARN|g\" output/taskdef.json || true",
+                        "sed -i \"s|EXECUTION_ROLE_ARN|$EXECUTION_ROLE_ARN|g\" output/taskdef.json || true"
+                    ]
+                }
+            },
+            "artifacts": {
+                "files": [
+                    "imagedefinitions.json",
+                    "output/taskdef.json",
+                    "output/appspec.yaml"
+                ]
+            }
+        })
+
         build_project = codebuild.Project(
             self, "BuildImage",
-            build_spec=codebuild.BuildSpec.from_source_filename("buildspec.yml"),
+            build_spec=inline_buildspec,
             environment=codebuild.BuildEnvironment(
                 privileged=True,
                 # Use a supported Amazon Linux 2 ARM standard image for CodeBuild
