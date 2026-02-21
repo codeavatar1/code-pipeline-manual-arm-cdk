@@ -107,7 +107,7 @@ class CodepipelineBuildDeployStack(Stack):
                         "echo Pushing the Docker image...",
                         "docker push $REPOSITORY_URI:$IMAGE_TAG",
                         "echo Writing imagedefinitions.json for CodeDeploy/CodePipeline",
-                        "printf '[{"name":"web","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json",
+                        'printf \'[{"name":"web","imageUri":"%s"}]\' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json',
                         "mkdir -p output",
                         "cp app/taskdef.json output/taskdef.json || true",
                         "cp app/appspec.yaml output/appspec.yaml || true",
